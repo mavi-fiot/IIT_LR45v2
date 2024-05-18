@@ -8,3 +8,4 @@ COPY styles.css /usr/share/nginx/html/
 
 # Вказуємо EXPOSE на порт 8040, на якому буде працювати Nginx
 EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
