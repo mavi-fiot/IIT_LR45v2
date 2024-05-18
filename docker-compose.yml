@@ -15,4 +15,6 @@ services:
     container_name: watchtower
     environment:
       - WATCHTOWER_CLEANUP=true
+
+    command: --interval 300
     restart: always
